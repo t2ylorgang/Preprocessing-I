@@ -142,6 +142,11 @@ html,
 .kingsize header {
   padding: 2%;
 }
+.kingsize header body {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: "sans-serif", "Big-Caslon", "Book-Antiqua", "Palatino-Linotype", "Georgia";
+}
 .kingsize header nav {
   width: 80%;
   display: flex;
@@ -158,15 +163,9 @@ html,
   border-radius: 10px;
   margin-left: 2px;
 }
-.kingsize header nav a h1 {
-  color: blue;
-  font-family: sans-serif;
-  font-size: 5rem;
-}
-.kingsize header nav a h1 h2 {
-  color: blue;
-  font-family: sans-serif;
-  font-size: 2rem;
+.wrapper {
+  display: flex;
+  justify-content: center;
 }
 .kingsize hr {
   border: 1px solid black;
@@ -278,4 +277,15 @@ td {
   padding: 1%;
   margin: 1%;
   background-color: silver;
+}
+h1,
+h2 {
+  color: blue;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 2rem;
 }
