@@ -59,6 +59,11 @@ table {
 	background-color: @favcolor;
 }
 
+.flexcenter {
+	justify-content: center;
+	align-items: center;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -101,8 +106,7 @@ html, .kingsize body {
 		.container4 {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+			.flexcenter;
 			width: 98%;
 			.silverbox;
 
@@ -129,12 +133,21 @@ html, .kingsize body {
 				border-radius: 10px;
 				margin-left: 2px;
 
+			.grandbucket {
+				display: flex;
+				flex-direction: column;
+				.flexcenter;
+
 				h1, h2 {
 					color: blue;
 					font-family: sans-serif;
 
 				h1 {
 					font-size: 5rem;
+
+					@media(max-width: 500px) {
+						font-size: 2rem;
+					}
 
 				h2 {
 					font-size: 2rem;
@@ -162,46 +175,36 @@ html, .kingsize body {
 					text-decoration: none;
 					font-family: sans-serif;
 
-				.grandbucket {
+				.container3 {
 					display: flex;
-					align-items: center;
-					justify-content: center;
+					width: 80%;
+					.flexcenter;
+					.silverbox;
 
-					.container3 {
+				footer p {
+					text-align: center;
+					.silverbox;
+
+				footer {
+					width: 80%;
+
+				table, th, td {
+					border: 1px solid black;
+					font-size: 1.5rem;
+					padding: 1rem;
+					background-color: lightblue;
+
+					.bucket {
+						width: 25rem;
+						margin-right: 10rem;
+
+					.bucket2 {
 						display: flex;
-						justify-content: center;
-						align-items: center;
-						width: 80%;
-						.silverbox;
+						flex-direction: column;
+						width: 35%;
 
-					footer p {
-						text-align: center;
-						.silverbox;
-
-						.bucket {
-							width: 25rem;
-							margin-right: 10rem;
-
-						.bucket2 {
-							display: flex;
-							flex-direction: column;
-							justify-content: center;
-							align-items: center;
-							width: 35%;
-
-						.tabletop {
-							text-decoration-line: underline;
-
-						footer {
-							width: 80%;
-
-							table, th, td {
-								border: 1px solid black;
-								font-size: 1.5rem;
-								padding: 1rem;
-								background-color: lightblue;
-							}
-						}
+					.tabletop {
+						text-decoration-line: underline;
 					}
 				}
 			}			
