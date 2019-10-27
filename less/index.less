@@ -49,17 +49,172 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+@favcolor: silver;
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html, .kingsize body {
 	height: 100%;
 	font-size: 62.5%;
+	font-family: "sans-serif", "Big-Caslon", "Book-Antiqua", "Palatino-Linotype", "Georgia";
 }
 
-header {
+.kingsize {
+	height: 98%;
+
+
+	header {
 	padding: 2%;
+	
+
+		nav {
+		width: 80%;
+		display: flex;
+		justify-content: flex-start;
+		
+			a {
+			border: 2px solid black;
+			padding: .333rem;
+			text-decoration: none;
+			font-family: sans-serif;
+			font-size: 20px;
+			color: blue;
+			background-color: @favcolor;
+			border-radius: 10px;
+			margin-left: 2px;
+			}			
+		}				
+	}					}
+}
+.kingsize hr {
+	border: 1px solid black;
+}
+
+.kingsize .pipes {
+	height: auto;
+	width: 7%;
+}
+
+.kingsize .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	padding: 1%;
+	margin: 1%;
+	border: 2px solid black;
+	background-color: @favcolor;
+}
+
+.kingsize .container2 {
+	display: inline-block;
+	width: 98%;
+	padding: 1%;
+	margin: 1%;
+	border: 2px solid black;
+	background-color: @favcolor;
+}
+
+.kingsize .container3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	padding: 1%;
+	margin: 1%;
+	border: 2px solid black;
+	background-color: @favcolor;
+}
+
+.kingsize .bucket {
+	width: 25rem;
+	margin-right: 10rem;
+}
+
+.kingsize .bucket2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 35%;
+}
+
+.kingsize p {
+	font-family: sans-serif;
+	font-size: 1.5rem;
+}
+
+.kingsize strong {
+	font-weight: bold;
+}
+
+.kingsize .boldcolor {
+	color: blue;
+}
+
+.kingsize button {
+	background-color: blue;
+	border: none;
+	color: white;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+.kingsize table, th, td {
+	border: 1px solid black;
+	font-size: 1.5rem;
+	padding: 1rem;
+	background-color: lightblue;
+}
+
+.kingsize .grandbucket {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.kingsize .container4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 98%;
+	padding: 1%;
+	margin: 1%;
+	border: 2px solid black;
+	background-color: @favcolor;
+}
+
+.kingsize .tabletop {
+	text-decoration-line: underline;
+}
+
+.kingsize .wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.kingsize .wrapper2 {
+	display: flex;
+	justify-content: center;
+}
+
+.kingsize footer {
+	width: 80%;
+}
+
+.kingsize footer p {
+	text-align: center;
+	border: 2px solid black;
+	padding: 1%;
+	margin: 1%;
+	background-color: @favcolor;
 }
 
 h1 {
@@ -72,150 +227,4 @@ h2 {
 	color: blue;
 	font-family: sans-serif;
 	font-size: 2rem;
-}
-
-nav {
-	width: 80%;
-	display: flex;
-	justify-content: flex-start;
-}
-
-nav a {
-	border: 2px solid black;
-	padding: .333rem;
-	text-decoration: none;
-	font-family: sans-serif;
-	font-size: 20px;
-	color: blue;
-	background-color: silver;
-	border-radius: 10px;
-	margin-left: 2px;
-}
-
-hr {
-	border: 1px solid black;
-}
-
-.pipes {
-	height: auto;
-	width: 7%;
-}
-
-.container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	width: 80%;
-	padding: 1%;
-	margin: 1%;
-	border: 2px solid black;
-	background-color: silver;
-}
-
-.container2 {
-	display: inline-block;
-	width: 98%;
-	padding: 1%;
-	margin: 1%;
-	border: 2px solid black;
-	background-color: silver;
-}
-
-.container3 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 80%;
-	padding: 1%;
-	margin: 1%;
-	border: 2px solid black;
-	background-color: silver;
-}
-
-.bucket {
-	width: 25rem;
-	margin-right: 10rem;
-}
-
-.bucket2 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 35%;
-}
-
-p {
-	font-family: sans-serif;
-	font-size: 1.5rem;
-}
-
-strong {
-	font-weight: bold;
-}
-
-.boldcolor {
-	color: blue;
-}
-
-button {
-	background-color: blue;
-	border: none;
-	color: white;
-	padding: 1%;
-	text-align: center;
-	text-decoration: none;
-	font-family: sans-serif;
-}
-
-table, th, td {
-	border: 1px solid black;
-	font-size: 1.5rem;
-	padding: 1rem;
-	background-color: lightblue;
-}
-
-.grandbucket {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.container4 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 98%;
-	padding: 1%;
-	margin: 1%;
-	border: 2px solid black;
-	background-color: silver;
-}
-
-.tabletop {
-	text-decoration-line: underline;
-}
-
-.wrapper {
-	display: flex;
-	justify-content: center;
-}
-
-.wrapper2 {
-	display: flex;
-	justify-content: center;
-}
-
-footer {
-	width: 80%;
-}
-
-footer p {
-	text-align: center;
-	border: 2px solid black;
-	padding: 1%;
-	margin: 1%;
-	background-color: silver;
 }
